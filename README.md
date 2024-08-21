@@ -23,7 +23,7 @@ This is a Python-based tool for creating, managing, and analyzing timelines for 
 Clone the repository to your local machine:
 
 Open a terminal and type:
-git clone https://github.com/yourusername/osint-timeline-tool.git
+git clone https://github.com/Dutchosintguy/osint-timeline-tool.git
 cd osint-timeline-tool
 
 
