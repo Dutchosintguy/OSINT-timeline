@@ -1,0 +1,4 @@
+pandas==2.0.3
+matplotlib==3.7.2
+fpdf==1.7.2
+openpyxl==3.1.2
