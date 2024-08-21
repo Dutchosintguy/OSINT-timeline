@@ -12,7 +12,7 @@ This is a Python-based tool for creating, managing, and analyzing timelines for 
 - **Persistent Storage:** Timelines are saved and can be loaded later for continued work.
 
 
-
+***
 
 ## Installation
 
@@ -26,32 +26,32 @@ This is a Python-based tool for creating, managing, and analyzing timelines for 
 Clone the repository to your local machine:
 
 Open a terminal and type:
-git clone https://github.com/Dutchosintguy/osint-timeline-tool.git
+`git clone https://github.com/Dutchosintguy/osint-timeline-tool.git`
 
 
-cd osint-timeline-tool
+`cd osint-timeline-tool`
 
 
 ### Step 2: Set Up a Virtual Environment (Optional but Recommended)
 
 It is recommended to use a virtual environment to keep your project dependencies isolated.
 
-python3 -m venv venv
+`python3 -m venv venv
 source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
 
 ### Step 3: nstall Dependencies
 Install the required Python packages using pip:
 
-pip install -r requirements.txt
+`pip install -r requirements.txt`
 
 ### Step 4: Run the Tool
 Run the tool using Python:
 
-python OSINT_timeline.py
+`python OSINT_timeline.py`
 
 
 
-
+***
 
 ## How to Use
 
@@ -89,6 +89,9 @@ XLS: Exports the data to an Excel file.
 PDF: Exports the data to a PDF file with each event's details.
 6. Save and Exit
 You can save the current timeline at any time by selecting the save option from the menu. The timeline is also automatically saved when you exit the program.
+
+
+***
 
 ## Contributing
 Contributions are welcome! If you have suggestions or improvements, feel free to create a pull request or open an issue.
