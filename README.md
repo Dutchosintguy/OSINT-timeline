@@ -11,6 +11,9 @@ This is a Python-based tool for creating, managing, and analyzing timelines for 
 - **Export:** Export the timeline or query results to CSV, XLS, and PDF formats.
 - **Persistent Storage:** Timelines are saved and can be loaded later for continued work.
 
+
+
+
 ## Installation
 
 ### Prerequisites
@@ -43,6 +46,9 @@ pip install -r requirements.txt
 Run the tool using Python:
 
 python OSINT_timeline.py
+
+
+
 
 
 ## How to Use
