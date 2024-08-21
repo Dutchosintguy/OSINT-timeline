@@ -27,6 +27,8 @@ Clone the repository to your local machine:
 
 Open a terminal and type:
 git clone https://github.com/Dutchosintguy/osint-timeline-tool.git
+
+
 cd osint-timeline-tool
 
 
