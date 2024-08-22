@@ -39,7 +39,7 @@ It is recommended to use a virtual environment to keep your project dependencies
 `python3 -m venv venv
 source venv/bin/activate`  
 
-# On Windows, use `venv\Scripts\activate`
+On Windows, use `venv\Scripts\activate`
 
 ### Step 3: Install Dependencies
 Install the required Python packages using pip:
