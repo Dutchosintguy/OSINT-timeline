@@ -5,6 +5,11 @@ import os
 
 # Directory to store timelines
 TIMELINE_DIR = "timelines"
+# Matplotlib window width and height
+WINDOW_WIDTH = 12
+WINDOW_HEIGHT = 6
+# Max symbols to wrap descriptions
+MAX_SYMBOLS = 40
 
 # Ensure the timeline directory exists
 if not os.path.exists(TIMELINE_DIR):
@@ -146,6 +151,26 @@ def query_data_step_by_step():
     print(result)
     return result
 
+# Function to wrap text by spaces
+def wrap_text(text, max_width):
+    words = text.split()
+    wrapped_lines = []
+    current_line = ""
+
+    for word in words:
+        if len(current_line) + len(word) + 1 <= max_width:
+            if current_line:
+                current_line += " "
+            current_line += word
+        else:
+            wrapped_lines.append(current_line)
+            current_line = word
+
+    if current_line:
+        wrapped_lines.append(current_line)
+
+    return "\n".join(wrapped_lines)
+
 # Function to visualize the timeline
 def visualize_timeline():
     global data
@@ -157,9 +182,9 @@ def visualize_timeline():
     
     sorted_data = data.sort_values(by='Datetime')
     
-    plt.figure(figsize=(10, 5))
+    plt.figure(figsize=(WINDOW_WIDTH, WINDOW_HEIGHT))
     plt.plot(sorted_data['Datetime'], sorted_data.index, marker='o')
-    plt.yticks(sorted_data.index, sorted_data['Description'])
+    plt.yticks(sorted_data.index, sorted_data['Description'].apply(lambda x: wrap_text(x, MAX_SYMBOLS)))
     plt.xlabel('Date and Time')
     plt.ylabel('Events')
     plt.title('OSINT Investigation Timeline')

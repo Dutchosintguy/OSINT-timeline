@@ -1,0 +1,11 @@
+Date,Time,Location,Person_Entity,Image,Video,Description,Source,Source_Link
+2024-08-12,18:30,"Manhattan,New York City",John Smith,,https://www.youtube.com/watch?v=dQw4w9WgXcQ,First robbery occurred at a supermarket on the corner of 5th Avenue and 23rd Street. The suspect threatened the cashier and stole $500.,NYPD Report #12345,
+2024-08-13,15:42,"Brooklyn,New York City",John Smith,,,Second robbery at a convenience store on Flatbush Avenue. The suspect used a knife and fled with $300.,Witness Report;NYPD Case File #12346,
+2024-08-14,23:13,"Queens, New York City",Unknown Accomplice,,https://www.youtube.com/watch?v=qwA6MmbeGNo,Third robbery reported at a gas station on Queens Boulevard. Suspect was accompanied by another individual.,"CCTV Footage, Gas Station",
+2024-08-15,19:45,"Bronx, New York City",John Smith,,,Fourth robbery at a liquor store on 149th Street. The suspect was armed and took $700.,NYPD Report #12347,
+2024-08-16,21:20,"Harlem, New York City",John Smith,,,Fifth robbery at a pharmacy on Malcolm X Boulevard. The suspect was disguised and used a fake gun.,Pharmacy Employee Testimony,
+2024-08-17,22:05,"Staten Island, New York City",John Smith,,,Sixth robbery at a small grocery store. The suspect was recognized by the store owner from a news report.,"Local News Report, Witness Testimony",
+2024-08-18,16:00,"Central Park, Manhattan",NYPD,,,Police began a manhunt in Central Park after receiving a tip about the suspect’s location.,NYPD Press Release,
+2024-08-18,18:30,"Upper East Side, Manhattan",John Smith,,,Suspect attempted to rob a jewelry store but was confronted by police.,NYPD Report #12348,
+2024-08-18,18:45,"Times Square, Manhattan",John Smith,,,Police chased the suspect to Times Square. A brief standoff occurred.,Eyewitness Video Footage,
+2024-08-18,19:00,"Times Square, Manhattan","NYPD,John Smith",,,The suspect was apprehended by police after a short standoff. No injuries reported.,NYPD Official Statement,

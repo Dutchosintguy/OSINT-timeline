@@ -36,8 +36,10 @@ Open a terminal and type:
 
 It is recommended to use a virtual environment to keep your project dependencies isolated.
 
-`python3 -m venv venv
-source venv/bin/activate`  
+```sh
+python3 -m venv venv
+source venv/bin/activate
+```
 
 On Windows, use `venv\Scripts\activate`
 
@@ -50,8 +52,6 @@ Install the required Python packages using pip:
 Run the tool using Python:
 
 `python OSINT_timeline.py`
-
-
 
 ***
 
@@ -66,16 +66,15 @@ Continue with an Existing Timeline: Choose this option to select from a list of 
 ### 2. Input Data
 After choosing or creating a timeline, you can start adding entries:
 
-Enter the date (YYYY-MM-DD).
-Enter the time (HH
-).
-Enter the location of the event.
-Enter the person or entity involved.
-Enter the image file name (optional).
-Enter the video file name (optional).
-Enter a description of the event.
-Enter the source of the information.
-Enter the source link (URL).
+- Enter the date (YYYY-MM-DD).
+- Enter the time (HH:MM).
+- Enter the location of the event.
+- Enter the person or entity involved.
+- Enter the image file name (optional).
+- Enter the video file name (optional).
+- Enter a description of the event.
+- Enter the source of the information.
+- Enter the source link (URL).
 
 ### 3. Query the Timeline
 You can query the timeline based on specific fields such as date, time, location, person/entity, description, and source. The results of the query can be viewed on the screen.
@@ -86,10 +85,11 @@ You can visualize the timeline to see the sequence of events over time. This wil
 ### 5. Export Data
 The timeline or query results can be exported in three formats:
 
-CSV: Exports the data to a CSV file.
-XLS: Exports the data to an Excel file.
-PDF: Exports the data to a PDF file with each event's details.
-6. Save and Exit
+- CSV: Exports the data to a CSV file.
+- XLS: Exports the data to an Excel file.
+- PDF: Exports the data to a PDF file with each event's details.
+
+### 6. Save and Exit
 You can save the current timeline at any time by selecting the save option from the menu. The timeline is also automatically saved when you exit the program.
 
 
