@@ -37,9 +37,9 @@ Open a terminal and type:
 It is recommended to use a virtual environment to keep your project dependencies isolated.
 
 `python3 -m venv venv
-source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
+source venv/bin/activate  # On Windows, use venv\Scripts\activate`
 
-### Step 3: nstall Dependencies
+### Step 3: Install Dependencies
 Install the required Python packages using pip:
 
 `pip install -r requirements.txt`
