@@ -16,9 +16,9 @@ The OSINT Timeline Tool is a Python-based application designed to help you creat
     - [Query Timeline](#query-timeline)
     - [Visualize Timeline](#visualize-timeline)
     - [Export Timeline](#export-timeline)
-- [License](#license)
+
 - [Contributing](#contributing)
-- [Contact](#contact)
+
 
 ## Features
 - **Web Interface**: Manage your timeline through a user-friendly web interface accessible via any browser.
