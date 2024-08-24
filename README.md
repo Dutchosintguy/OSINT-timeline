@@ -1,97 +1,117 @@
+
 # OSINT Timeline Tool
 
-This is a Python-based tool for creating, managing, and analyzing timelines for OSINT (Open Source Intelligence) investigations. The tool allows you to start a new timeline or continue with an existing one, input data related to events, query the timeline, visualize it, and export the data in various formats.
+The OSINT Timeline Tool is a Python-based application designed to help you create, manage, and visualize timelines for Open Source Intelligence (OSINT) investigations. The tool allows users to document events, link related entities, and visualize interactions over time through an intuitive web interface. You can also export the timelines and query results in various formats, including CSV, Excel, and PDF.
+
+## Table of Contents
+- [Features](#features)
+- [Installation](#installation)
+  - [Prerequisites](#prerequisites)
+  - [Clone the Repository](#clone-the-repository)
+  - [Install Required Dependencies](#install-required-dependencies)
+- [Usage](#usage)
+  - [Starting the Application](#starting-the-application)
+  - [Web Interface Overview](#web-interface-overview)
+    - [Add New Entry](#add-new-entry)
+    - [Query Timeline](#query-timeline)
+    - [Visualize Timeline](#visualize-timeline)
+    - [Export Timeline](#export-timeline)
+- [License](#license)
+- [Contributing](#contributing)
+- [Contact](#contact)
 
 ## Features
-
-- **Start or Continue Timelines:** Easily start a new timeline or continue with an existing one.
-- **Data Input:** Add detailed information about events, including date, time, location, persons/entities involved, images, videos, descriptions, and sources.
-- **Query Functionality:** Query the timeline based on specific fields.
-- **Visualization:** Visualize the timeline to see the sequence of events.
-- **Export:** Export the timeline or query results to CSV, XLS, and PDF formats.
-- **Persistent Storage:** Timelines are saved and can be loaded later for continued work.
-
-
-***
+- **Web Interface**: Manage your timeline through a user-friendly web interface accessible via any browser.
+- **Timeline Management**: Create, load, and save timelines.
+- **Entry Documentation**: Add detailed entries with date, time, location, involved entities, descriptions, and more.
+- **Relational Visualization**: Generate interactive visualizations that show connections between entities and events over time.
+- **Querying**: Search and filter timeline entries based on specific criteria.
+- **Export**: Export timelines or query results to CSV, Excel, and PDF formats.
 
 ## Installation
 
 ### Prerequisites
-
 - Python 3.7 or later
-- Pip (Python package manager)
+- `pip` (Python package installer)
 
-### Step 1: Clone the Repository
+### Clone the Repository
+First, you need to clone the repository from GitHub. If you haven’t already, open your terminal (or command prompt) and run:
 
-Clone the repository to your local machine:
+```bash
+git clone https://github.com/your-username/osint-timeline-tool.git
+cd osint-timeline-tool
+```
 
-Open a terminal and type:
-`git clone https://github.com/Dutchosintguy/osint-timeline-tool.git`
+This command will clone the repository to your local machine and navigate into the project directory.
 
+### Install Required Dependencies
+All required Python packages are listed in the `requirements.txt` file. To install them, simply run the following command in your terminal:
 
-`cd osint-timeline-tool`
+```bash
+pip install -r requirements.txt
+```
 
+This command installs all the necessary dependencies:
 
-### Step 2: Set Up a Virtual Environment (Optional but Recommended)
+- **Flask**: For running the web interface.
+- **pandas**: For managing and manipulating the timeline data.
+- **matplotlib**: For basic static timeline visualizations.
+- **fpdf**: For exporting timelines and queries to PDF format.
+- **plotly**: For interactive timeline visualizations.
+- **networkx**: For handling graph-based visualizations and relationships.
 
-It is recommended to use a virtual environment to keep your project dependencies isolated.
+## Usage
 
-`python3 -m venv venv
-source venv/bin/activate`  
+### Starting the Application
+Once all dependencies are installed, you can start the application by running the Python script:
 
-On Windows, use `venv\Scripts\activate`
+```bash
+python osint_timeline_tool.py
+```
 
-### Step 3: Install Dependencies
-Install the required Python packages using pip:
+This command will start a local web server, and you should see output in your terminal similar to:
 
-`pip install -r requirements.txt`
+```bash
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+```
 
-### Step 4: Run the Tool
-Run the tool using Python:
+### Web Interface Overview
+Open your web browser and go to `http://127.0.0.1:5000`. You will be presented with the main interface of the OSINT Timeline Tool. The interface consists of several sections:
 
-`python OSINT_timeline.py`
+#### Add New Entry
+This section allows you to add new events to your timeline. You can enter the following details:
 
+- **Date**: The date of the event (in `YYYY-MM-DD` format).
+- **Time**: The time of the event (in `HH:MM` format).
+- **Location**: The location where the event took place.
+- **Person or Entity**: The person or entity involved in the event.
+- **Image**: The file name of any related image (optional).
+- **Video**: The file name of any related video (optional).
+- **Description**: A brief description of the event.
+- **Source**: The source of the information.
+- **Source Link**: A link to the source (optional).
+- **Related Entities**: Other related entities, separated by a semicolon (`;`).
+- **Relationship Type**: The type of relationship (e.g., `collaboration`, `conflict`).
 
+After filling out the form, click "Add Entry" to save the event to your timeline.
 
-***
+#### Query Timeline
+In this section, you can search for specific events based on criteria such as date, time, location, person/entity, description, and source. Enter the relevant details in the provided fields and click "Query" to view the results. The results will be displayed on a separate page, showing all matching entries.
 
-## How to Use
+#### Visualize Timeline
+This section provides two options for visualizing your timeline:
 
-### 1. Start or Continue a Timeline
-When you run the script, you will be asked whether you want to start a new timeline or continue with an existing one.
+- **Basic Visualization**: Click on this link to generate a simple timeline of events, displayed as a static image.
+- **Relational Visualization**: Click on this link to generate an interactive relational timeline that shows connections between different entities over time.
 
-Start a New Timeline: Choose this option to create a new timeline. You will be prompted to enter a name for the timeline.
-Continue with an Existing Timeline: Choose this option to select from a list of previously saved timelines.
+#### Export Timeline
+In this section, you can export your timeline data or query results in one of the following formats:
 
-### 2. Input Data
-After choosing or creating a timeline, you can start adding entries:
+- **CSV**: A standard spreadsheet format.
+- **Excel**: An Excel workbook format.
+- **PDF**: A formatted PDF document.
 
-Enter the date (YYYY-MM-DD).
-Enter the time (HH
-).
-Enter the location of the event.
-Enter the person or entity involved.
-Enter the image file name (optional).
-Enter the video file name (optional).
-Enter a description of the event.
-Enter the source of the information.
-Enter the source link (URL).
-
-### 3. Query the Timeline
-You can query the timeline based on specific fields such as date, time, location, person/entity, description, and source. The results of the query can be viewed on the screen.
-
-### 4. Visualize the Timeline
-You can visualize the timeline to see the sequence of events over time. This will generate a plot with the events plotted in chronological order.
-
-### 5. Export Data
-The timeline or query results can be exported in three formats:
-
-CSV: Exports the data to a CSV file.
-XLS: Exports the data to an Excel file.
-PDF: Exports the data to a PDF file with each event's details.
-6. Save and Exit
-You can save the current timeline at any time by selecting the save option from the menu. The timeline is also automatically saved when you exit the program.
-
+Choose your desired format from the dropdown menu and click "Export" to download the file.
 
 ***
 
