@@ -1,4 +1,6 @@
+Flask==2.3.3
 pandas==2.0.3
 matplotlib==3.7.2
 fpdf==1.7.2
-openpyxl==3.1.2
+plotly==5.15.0
+networkx==3.1
