@@ -1,0 +1,5 @@
+﻿Date,Time,Location,Person_Entity,Image,Video,Description,Source,Source_Link,Related_Entities,Relationship_Type
+"2022-02-13,19:30,SoFi Stadium,Dr. Dre,,,""Performed at the Super Bowl Halftime Show with Eminem, Snoop Dogg, and Kendrick Lamar"",""Official Super Bowl Website"",""https://www.nfl.com/super-bowl/event-info/"",""Eminem;Snoop Dogg;Kendrick Lamar"",""Collaboration"""
+"2022-02-13,19:30,SoFi Stadium,Eminem,,,""Performed 'Lose Yourself' during the Super Bowl Halftime Show"",""Official Super Bowl Website"",""https://www.nfl.com/super-bowl/event-info/"",""Dr. Dre;Snoop Dogg;Kendrick Lamar"",""Collaboration"""
+"2022-02-13,19:30,SoFi Stadium,Snoop Dogg,,,""Performed 'The Next Episode' during the Super Bowl Halftime Show"",""Official Super Bowl Website"",""https://www.nfl.com/super-bowl/event-info/"",""Dr. Dre;Eminem;Kendrick Lamar"",""Collaboration"""
+"2022-02-13,19:30,SoFi Stadium,Kendrick Lamar,,,""Performed 'Alright' during the Super Bowl Halftime Show"",""Official Super Bowl Website"",""https://www.nfl.com/super-bowl/event-info/"",""Dr. Dre;Eminem;Snoop Dogg"",""Collaboration"""
